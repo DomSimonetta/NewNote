@@ -4,11 +4,11 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-express.static(root, [options]);
+//express.static(root, [options]);
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json);
-app.use(express.static('public'));
+//app.use(express.static('public'));
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
